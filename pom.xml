@@ -52,15 +52,15 @@
 
 	<!-- Source code access -->
 	<scm>
-		<connection>scm:git:git://github.com/Legacy/SoundSystem.git</connection>
-		<developerConnection>scm:git:git@github.com:Legacy/SoundSystem.git</developerConnection>
-		<url>https://github.com/Legacy/SoundSystem</url>
+		<connection>scm:git:git://github.com/Spoutcraft/SoundSystem.git</connection>
+		<developerConnection>scm:git:git@github.com:Spoutcraft/SoundSystem.git</developerConnection>
+		<url>https://github.com/Spoutcraft/SoundSystem</url>
 	</scm>
 
 	<!-- Continuous integration -->
 	<ciManagement>
 		<system>travis</system>
-		<url>https://travis-ci.org/Legacy/SoundSystem</url>
+		<url>https://travis-ci.org/Spoutcraft/SoundSystem</url>
 	</ciManagement>
 
 	<!-- Issue management -->
