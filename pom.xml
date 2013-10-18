@@ -29,8 +29,8 @@
 	<!-- License information -->
 	<licenses>
 		<license>
-			<name>GNU Lesser General Public License Version 3</name>
-			<url>http://gnu.org/licenses/lgpl.html</url>
+			<name>The SoundSystem License</name>
+			<url>https://raw.github.com/Spoutcraft/SoundSystem/master/LICENSE.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>

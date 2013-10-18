@@ -15,7 +15,7 @@ notifications:
   email: false
   webhooks:
     # Send build information and status to Notifico.
-    - http://n.tkte.ch/h/1447/4T2eBIh4XodXZvt1T8mffSRS
+    - http://n.tkte.ch/h/1578/gbM5RxtC-46E5Zc4HuLDxMOQ
 
 env:
   global:
