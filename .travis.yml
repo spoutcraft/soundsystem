@@ -6,9 +6,9 @@ jdk: oraclejdk7
 install: mvn package -DbuildNumber=$TRAVIS_BUILD_NUMBER -DciSystem=travis -Dcommit=${TRAVIS_COMMIT:0:7}
 after_success:
   # Get files for use with build, namely the custom Maven settings.xml.
-  - "git clone https://github.com/Legacy/travis-ci-resources.git target/travis"
+  - "git clone https://github.com/Spoutcraft/travis-ci-resources.git target/travis"
   # Check if commit s not a pull request, if git repo is official, and if branch is master. If checks pass, deploy artifacts to Maven repository.
-  - "[[ $TRAVIS_PULL_REQUEST == false ]] && [[ $TRAVIS_REPO_SLUG == Legacy/SoundSystem ]] && [[ $TRAVIS_BRANCH == master ]] && mvn deploy --settings target/travis/settings.xml"
+  - "[[ $TRAVIS_PULL_REQUEST == false ]] && [[ $TRAVIS_REPO_SLUG == Spoutcraft/SoundSystem ]] && [[ $TRAVIS_BRANCH == master ]] && mvn deploy --settings target/travis/settings.xml"
 
 notifications:
   # Disable build status email notifications, until the issue with forks is fixed.
@@ -19,5 +19,5 @@ notifications:
 
 env:
   global:
-    - secure: "IkiuTOaOatfihImIuBRyn5ZyE5fPMoiZ/5IwWqSP539VdEB0i5eM+JiT/t7HhKask+DmWaidfSu2N1zMd1Xi0B0o8zbG1hUswKOqUD2COXq5Ke79pvDsyEeYO2AsZuDWt7Ak6MpHGVdMeQ6wZOs/EIzd5a6D+InsdrRI0uFhx2g="
-    - secure: "DU2DmfpUV2S5Ha77WGbJpAQEHVQw1cP9HgyeFShjNsyY6uNCQ+RfvEv//IJ58YtXofIa3cfDwUidJZ+5WoQl+VBt/Fnq6uhyyyVCe2F8ZdZPGWYHpH66qkj8P9QyFArXHCoFYKc4deo+50ga2epPaAlKcegShwtK+Wpi4GfGFeo="
+    - secure: "J9vhmPqAQUNAuLu3fznZiNeFq4TELWOH8/ZFhq2HcmPFYmDMf7q/Dg/RxLuVRDJWxPvHeZ999n049gbWQkdf8wANQrsk9kbyB6KtN3ch5MvJdgJxX/pyUSqh61Vy0Ccy3R7oD4YcEA9Skgo82pUtCalLpBPAFSHTf+tgEMU9vZM="
+    - secure: "Obzj5YDhNfapJiD4N5vdhUnYDOwRKtEYXBIEWhR94PCh0rpddDviCDm9KUbkqztEZnzNqL0Tr3E6nVJzJdOa0wI47lcRehmCfH5wVlT8D8uxmcMuKsx0yPN0XIycFBFgTczhHSCOd5a0SycGTa6cQsJ5woWrL5OZomwQJMccvGY="
